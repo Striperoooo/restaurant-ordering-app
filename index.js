@@ -3,11 +3,11 @@ import menuArray from './data.js'
 
 const menuSection = document.getElementById('menu-section')
 const cartSection = document.getElementById('cart-section')
-const cardForm = document.querySelector('.card-form')
+const cardForm = document.getElementById('card-form')
 const cart = []
 
 
-
+cardForm.addEventListener('submit', handlePayBtn)
 document.addEventListener("click", function (e) {
 
     if (e.target.closest('.add-icon-container')) {
@@ -27,7 +27,7 @@ document.addEventListener("click", function (e) {
 
 })
 
-cardForm.addEventListener('submit', handlePayBtn)
+
 
 function handleAddToCart(itemId) {
 
@@ -74,11 +74,16 @@ function handlePayBtn(e) {
     e.preventDefault()
 
     document.getElementById('card-modal').classList.add('hidden')
-    cardForm.reset()
+    const cardFormData = new FormData(cardForm)
+    const name = cardFormData.get('name')
+
+
     cartSection.innerHTML = `
             <div class="thanks-div">
-                <h3 class="thanks-text">Thanks, Mikki! Your order is on its way!<h3>
+                <h3 class="thanks-text">Thanks, ${name}! Your order is on its way!<h3>
             </div>`
+    cardForm.reset()
+
 }
 
 
