@@ -1,6 +1,6 @@
 🍽️ Restaurant Ordering App
 
-A simple and responsive web app that simulates a digital restaurant ordering experience. Users can browse a menu, add items to their cart, remove them, and complete their order using a mock payment form.
+A web app that simulates a digital restaurant ordering experience. Users can browse a menu, add items to their cart, remove them, and complete their order using a mock payment form.
 
 🚀 Features
 - View a menu of food items with emojis, ingredients, and prices
