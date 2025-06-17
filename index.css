@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     font-family: "Smythe", system-ui;
-} 
+}
 
 /* general */
 
@@ -16,7 +17,9 @@ html, body {
     width: 550px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     margin: 0;
     font-weight: 400;
 }
@@ -78,7 +81,7 @@ header {
 }
 
 .menu-name {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
 }
 
 .menu-ingredients {
@@ -105,14 +108,18 @@ header {
 .add-icon-container:hover,
 .add-icon-container:active {
     cursor: pointer;
-    background-color: #f0f0f0; /* light gray background */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
-    transform: scale(1.05); /* slight zoom-in effect */
+    background-color: #f0f0f0;
+    /* light gray background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* subtle shadow */
+    transform: scale(1.05);
+    /* slight zoom-in effect */
     transition: all 0.2s ease-in-out;
 }
 
 .add-icon-container:active {
-    transform: scale(1.20); /* slight zoom-in effect */
+    transform: scale(1.20);
+    /* slight zoom-in effect */
     transition: all 0s;
 }
 
@@ -127,7 +134,7 @@ header {
     margin: 45px 0 53px 0;
 }
 
-.cart, 
+.cart,
 .your-order-text,
 .complete-order-text {
     font-size: 1.75rem;
@@ -169,18 +176,21 @@ header {
 .item-remove-btn:hover,
 .item-remove-btn:active {
     cursor: pointer;
-    color: #635f5f; /* light gray background */
+    color: #635f5f;
+    /* light gray background */
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); subtle shadow */
-    transform: scale(1.05); /* slight zoom-in effect */
+    transform: scale(1.05);
+    /* slight zoom-in effect */
     transition: all 0.2s ease-in-out;
 }
 
 .item-remove-btn:active {
-    transform: scale(1.10); /* slight zoom-in effect */
+    transform: scale(1.10);
+    /* slight zoom-in effect */
     transition: all 0st;
 }
 
-.item-price, 
+.item-price,
 .order-price {
     font-size: 1.25rem;
 }
@@ -204,20 +214,23 @@ header {
     margin-top: 53px;
 }
 
-.complete-order-btn:hover, 
+.complete-order-btn:hover,
 .complete-order-btn:active,
 .form-pay-btn:hover,
 .form-pay-btn:active {
     cursor: pointer;
-    background-color: #12c48a; /* Slightly darker */
+    background-color: #12c48a;
+    /* Slightly darker */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px); /* Little pop up effect */
-    
+    transform: translateY(-2px);
+    /* Little pop up effect */
+
 }
 
 .complete-order-btn:active,
 .form-pay-btn:active {
-    transform: scale(1.02); /* slight zoom-in effect */
+    transform: scale(1.02);
+    /* slight zoom-in effect */
     transition: all 0s;
 }
 
@@ -303,11 +316,3 @@ input:not(:first-of-type) {
     font-weight: 400;
     font-size: 2rem;
 }
-
-
-
-
-
-
-
-
